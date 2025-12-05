@@ -15,7 +15,8 @@ const router = createRouter({
     {
       path: '/blackjack/:roomId',
       name: 'Blackjack',
-      component: () => import('../views/BlackjackView.vue')
+      component: () => import('../views/BlackjackView.vue'),
+      props: true
     } 
   ]
 })
