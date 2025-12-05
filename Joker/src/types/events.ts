@@ -1,4 +1,3 @@
-
 import { Suit, Rank } from '../core/card-games/types.js';
 
 export interface IFeCard {
@@ -22,6 +21,7 @@ export interface IFeGameState {
     phase: string; 
     dealerHand: IFeCard[]; 
     players: IFePlayerState[];
+    timerRemaining?: number; // seconds remaining in current phase (optional)
 }
 
 export interface ClientToServerEvents {
@@ -29,6 +29,7 @@ export interface ClientToServerEvents {
     'blackjack:hit': (roomId: string) => void;
     'blackjack:stand': (roomId: string) => void;
     'blackjack:bet': (roomId: string, amount: number) => void;
+    'blackjack:phaseTimeout': (roomId: string, phase: string) => void;
 }
 
 export interface ServerToClientEvents {
