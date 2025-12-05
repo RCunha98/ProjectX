@@ -1,0 +1,33 @@
+# Dependency Directories
+/node_modules/
+/Joker/node_modules/
+/Valete/node_modules/
+
+# Built/Compiled Output
+/Joker/dist/
+/Valete/dist/
+/Valete/out/
+
+# TypeScript Cache
+/Joker/.tsbuildinfo
+/Valete/.tsbuildinfo
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Environment and Credentials
+.env
+.env.local
+.env.*.local
+.vscode/
+
+# IDE/Editor Configs
+.idea/
+.vscode/
+*.sublime-workspace
+
+# Logs and npm debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
